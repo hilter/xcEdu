@@ -85,13 +85,13 @@ public class ProduceRouting {
              */
            /* for(int i=0;i<5;i++){
                 //发送消息的时候指定routingKey
-                String message = "send email inform message to user";
+                String message = "通知：所有员工年底双薪";
                 channel.basicPublish(EXCHANGE_ROUTING_INFORM,ROUTINGKEY_EMAIL,null,message.getBytes());
                 System.out.println("send to mq "+message);
             }
             for(int i=0;i<5;i++){
                 //发送消息的时候指定routingKey
-                String message = "send sms inform message to user";
+                String message = "通知：所有员工年底双薪";
                 channel.basicPublish(EXCHANGE_ROUTING_INFORM,ROUTINGKEY_SMS,null,message.getBytes());
                 System.out.println("send to mq "+message);
             }*/

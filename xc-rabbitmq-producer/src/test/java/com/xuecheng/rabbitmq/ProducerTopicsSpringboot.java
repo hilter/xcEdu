@@ -11,6 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashMap;
 import java.util.Map;
+
 /**
  * @author 麦客子
  * @desc
@@ -39,7 +40,7 @@ public class ProducerTopicsSpringboot {
     }
 
     //使用rabbitTemplate发送消息
-    /*@Test
+    @Test
     public void testSendPostPage(){
 
         Map message = new HashMap<>();
@@ -48,14 +49,14 @@ public class ProducerTopicsSpringboot {
         String messageString = JSON.toJSONString(message);
         //路由key，就是站点ID
         String routingKey = "5a751fab6abb5044e0d19ea1";
-        *//**
+        /**
          * 参数：
          * 1、交换机名称
          * 2、routingKey
          * 3、消息内容
-         *//*
+         */
         rabbitTemplate.convertAndSend("ex_routing_cms_postpage",routingKey,messageString);
 
-    }*/
+    }
 
 }

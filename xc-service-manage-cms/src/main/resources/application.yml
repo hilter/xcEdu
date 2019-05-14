@@ -7,3 +7,4 @@ spring:
     mongodb:
       uri:  mongodb://root:root@localhost:27017
       database: xc_cms
+    mysql:

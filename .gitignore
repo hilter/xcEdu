@@ -1,0 +1,34 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+/.idea/uiDesigner.xml
+/xc-rabbitmq-consumer/xc-rabbitmq-consumer.iml
+/xc-rabbitmq-producer/xc-rabbitmq-producer.iml
+/xc-test-freemarker/xc-test-freemarker.iml
+.gitignore
+.idea/vcs.xml
+.idea/workspace.xml
+xc-framework-common/src/main/java/com/xuecheng/framework/exception/
+xc-framework-common/src/main/java/com/xuecheng/framework/interceptor/
+xc-framework-common/src/main/resources/
+xc-framework-common/src/test/
+xc-framework-model/src/main/resources/
+xc-framework-model/src/test/
+xc-framework-model/target/
+xc-framework-utils/src/main/resources/
+xc-framework-utils/src/test/
+xc-rabbitmq-consumer/target/
+xc-rabbitmq-producer/target/
+xc-service-api/src/main/resources/
+xc-service-api/src/test/
+xc-service-api/target/
+xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/config/
+xc-service-manage-cms/target/
+xc-test-freemarker/src/test/
+xc-test-freemarker/target/
