@@ -29,4 +29,21 @@ public interface CmsPageControllerApi {
      */
     @ApiOperation("新增页面")
     public CmsPageResult add(CmsPage cmsPage);
+
+    /**
+     * 通过ID查询页面
+     * @param id
+     * @return
+     */
+    @ApiOperation("通过ID查询页面")
+    public CmsPage findById(String id);
+
+    /**
+     * 修改页面
+     * @param id
+     * @param cmsPage
+     * @return
+     */
+    @ApiOperation("修改页面")
+    public CmsPageResult edit(String id,CmsPage cmsPage);
 }
