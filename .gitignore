@@ -14,8 +14,6 @@ gen
 .gitignore
 .idea/vcs.xml
 .idea/workspace.xml
-xc-framework-common/src/main/java/com/xuecheng/framework/exception/
-xc-framework-common/src/main/java/com/xuecheng/framework/interceptor/
 xc-framework-common/src/main/resources/
 xc-framework-common/src/test/
 xc-framework-model/src/main/resources/
