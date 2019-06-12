@@ -33,14 +33,14 @@ public class FreemarkerController {
     public String freemarker(Map<String, Object> map){
         //向数据模型放数据
         map.put("name","麦田守望者");
-        /*Student stu1 = new Student();
+        Student stu1 = new Student();
         stu1.setName("小明");
         stu1.setAge(18);
-        stu1.setWallet(1000.86f);
+        stu1.setMoney(1000.86f);
         stu1.setBirthday(new Date());
         Student stu2 = new Student();
         stu2.setName("小红");
-        stu2.setWallet(200.1f);
+        stu2.setMoney(200.1f);
         stu2.setAge(19);
         List<Student> friends = new ArrayList<>();
         friends.add(stu1);
@@ -58,7 +58,7 @@ public class FreemarkerController {
         //向数据模型放数据
         map.put("stu1",stu1);
         //向数据模型放数据
-        map.put("stuMap",stuMap);*/
+        map.put("stuMap",stuMap);
         //返回模板文件名称
         return "test01";
     }

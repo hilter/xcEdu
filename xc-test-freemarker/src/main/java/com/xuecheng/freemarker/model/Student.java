@@ -34,7 +34,7 @@ public class Student {
     /**
      * 钱包
      */
-    private Float wallet;
+    private Float money;
 
     /**
      * 朋友列表
