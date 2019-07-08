@@ -32,7 +32,7 @@ public class FreemarkerTest {
     @Test
     public void testGenerateHtml() throws IOException, TemplateException {
         //创建配置类
-        Configuration configuration = new Configuration(Configuration.getVersion());
+        Configuration configuration=new Configuration(Configuration.getVersion());
         String classpath = this.getClass().getResource("/").getPath();
         //设置模板路径
         configuration.setDirectoryForTemplateLoading(new File(classpath + "/templates/"));
@@ -51,6 +51,7 @@ public class FreemarkerTest {
         FileOutputStream fileOutputStream = new FileOutputStream(new File("f:/test1.html"));
         int copy = IOUtils.copy(inputStream, fileOutputStream);
     }
+
 
     //基于模板字符串生成静态化文件
     @Test
@@ -82,7 +83,7 @@ public class FreemarkerTest {
         System.out.println(content);
         InputStream inputStream = IOUtils.toInputStream(content);
         //输出文件
-        FileOutputStream fileOutputStream = new FileOutputStream(new File("d:/test1.html"));
+        FileOutputStream fileOutputStream = new FileOutputStream(new File("f:/test1.html"));
         IOUtils.copy(inputStream, fileOutputStream);
     }
 
