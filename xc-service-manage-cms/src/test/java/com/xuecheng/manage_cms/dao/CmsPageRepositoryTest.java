@@ -8,9 +8,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 /**
@@ -24,6 +27,9 @@ public class CmsPageRepositoryTest {
 
     @Autowired
     CmsPageRepository cmsPageRepository;
+
+    @Autowired
+    RestTemplate restTemplate;
 
     @Test
     public void testFindAll(){
@@ -66,5 +72,11 @@ public class CmsPageRepositoryTest {
     public void testfindByPageName(){
         CmsPage cmsPage = cmsPageRepository.findByPageName("index_banner.html");
         System.out.println(cmsPage);
+    }
+
+    @Test
+    public void testRestTemplate(){
+        ResponseEntity<Map> forEntity = restTemplate.getForEntity("http://localhost:31001/cms/config/getModel/5a791725dd573c3574ee333f", Map.class);
+        System.out.println(forEntity);
     }
 }
